@@ -3,12 +3,14 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Welcome to Meteor Chat!</h1>
 
   {{> chat}}
 </body>
 
 <template name="chat">
-  <button>Click Me</button>
+  Pulsa para <button class="incrementar">{{textoIncrementar}}</button> o <button  class="decrementar">{{textoDecrementar}}</button>
   <p>You've pressed the button {{counter}} times.</p>
+  <p>Doubled counter: {{doubleNumber counter}} </p>
+  <p>Doubled number four: 4 * 2 = {{doubleNumber 4}}</p>
 </template>
